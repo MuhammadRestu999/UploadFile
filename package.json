@@ -1,0 +1,33 @@
+{
+  "name": "uploadfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadRestu/UploadFile.git"
+  },
+  "keywords": [
+    "upload",
+    "file",
+    "uploadfile",
+    "fileupload"
+  ],
+  "author": "rstu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhammadRestu/UploadFile/issues"
+  },
+  "homepage": "https://github.com/MuhammadRestu/UploadFile#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "morgan": "^1.10.0"
+  }
+}
