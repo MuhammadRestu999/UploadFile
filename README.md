@@ -7,7 +7,7 @@ You can use the POST method to the api url from here to upload files<br>
 <br>
 curl:<br>
 ```bash
-curl -F "files[]=@file.txt"
+curl -F "files[]=@file.txt" https://example.com/upload # mine: http://rstu.my.id:5218/upload
 ```
 <br>
 axios(nodejs):<br>
