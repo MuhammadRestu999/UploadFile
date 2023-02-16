@@ -9,7 +9,6 @@ curl:<br>
 ```bash
 curl -F "files[]=@file.txt" https://example.com/upload # mine: http://rstu.my.id:5218/upload
 ```
-<br>
 axios(nodejs):<br>
 ```javascript
 const FormData = require("form-data");
