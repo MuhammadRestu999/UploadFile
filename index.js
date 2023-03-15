@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-const PORTS = process.env.PORT || [8080, 5218, 3000];
+const PORTS = process.env.PORT || [5218, 3000];
 const { color } = require("./lib/color.js");
 
 app.enable("trust proxy");
