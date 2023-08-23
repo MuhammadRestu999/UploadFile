@@ -7,7 +7,7 @@ You can use the POST method to the api url from here to upload files<br>
 <br>
 curl:<br>
 ```bash
-curl -F "files[]=@file.txt" https://example.com/upload # mine: http://rstu.my.id:5218/upload
+curl -F "files[]=@file.txt" https://example.com/upload # mine: https://up.mrestu.my.id/upload
 ```
 axios(nodejs):<br>
 ```javascript
@@ -15,7 +15,7 @@ const FormData = require("form-data");
 const axios = require("axios");
 const fs = require("fs");
 
-const url = "https://example.com/upload" // mine: http://rstu.my.id:5218/upload
+const url = "https://example.com/upload" // mine: https://up.mrestu.my.id/upload
 
 async function upload(file) {
   const fd = new FormData();
