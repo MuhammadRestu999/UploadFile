@@ -19,7 +19,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload({
   limits: {
-    fileSize: 50 * 1024 * 1024
+    fileSize: 100 * 1024 * 1024
   },
   abortOnLimit: true,
   debug: true
