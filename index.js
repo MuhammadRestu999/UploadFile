@@ -50,10 +50,11 @@ app.get("/list.json", (req, res) => {
     return {
       name: v,
       size: s.size,
-      date: s.birthtime
+      date: s.mtime,
+      dateInMilliseconds: s.mtimeMs
     }
   };
-  res.send(fs.readdirSync("upload").filter(v => v != ".gitkeep").map(f));
+  res.send(fs.readdirSync("upload").filter(v => v != ".gitkeep").map(f).sort((a, b) => b.dateInMilliseconds - a.dateInMilliseconds));
 });
 app.get("/u/:file", (req, res, next) => {
   const { file } = req.params;
